@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    <meta charset="utf-8">
+    <title>Local Market - Your Neighborhood Grocer</title>
+    <meta name="description" content="Get the latest news, checkout hand-picked recipes, and share with other locals.">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+    <link rel="shortcut icon" type="image/png" href="/favicon.png?123" sizes="16x16 32x32 64x64">
+
+    <link rel="apple-touch-icon" sizes="120x120" href="apple-touch-icon-precomposed.png">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+
+  <body>
+
+    <div class="page recipe make">
+
+      <!-- Inicia navbar -->
+      <nav class="black">
+        
+        <div class="nav-group">
+          
+          <a class="nav-item js-back" href="#">
+            <span class="icon-arrow-left-alt"></span>
+          </a>
+          
+          <a class="nav-item js-menu" href="#"><span class="icon-menu"></span></a>
+          
+        </div>
+
+        <div class="title-page">
+          Market
+          <span class="subtext-page">Home</span>
+        </div>
+
+        <div class="nav-group right"></div>
+
+      </nav>
+      <!-- Termina navbar -->
+
+      <div class="image-recipe" style="background-image: url('img/recipes/320x350/spring-fromage-fort.jpg')"></div>
+
+      <div class="attribution-recipe js-uncollapse">
+        <h1 class="title-recipe">TITULO (ATRIBUTO "title")</h1>
+        <div class="metadata-wrapper">
+          <p class="description-recipe">TITULO (ATRIBUTO "excerpt")</p>
+          <span class="source">NOMBRE DE LA FUENTE (ATRIBUTO "source.name")</span>
+          <span class="time">TIEMPO (ATRIBUTO "cookTime")</span>
+        </div>
+
+        <div class="btns-group">
+          <a class="btn-secondary js-show-recipe">Recipe</a>
+          <a class="btn-secondary js-show-make">Make It</a>
+        </div>
+      </div>
+
+
+      <div class="content-scrollable static-nav make-scrollable">
+        <a class="btn-tertiary js-share"><span class="icon-camera"></span> Share that you made this</a>
+
+        <h2 class="list-title">Ingredients</h2>
+        <ul class="list-ingredients">
+          <!-- AQUI VAN LOS INGREDIENTES -->
+        </ul>
+
+        <h2 class="list-title">Directions</h2>
+        <ol class="list-directions">
+            <!-- AQUI VAN LOS PASOS -->
+            <li class="item-direction">
+            ...
+            </li>
+        </ol>
+        <a href="URL DE RECETA (ATRIBUTO "source.url")" target="_blank" class="btn-primary js-open">NOMBRE DE LA FUENTE (ATRIBUTO "source.name")</a>
+      </div>
+
+
+    </div>
+ 
+    <!--JS FILES-->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+    <script type="text/javascript" src="data/recipes.js"></script>
+    <script type="text/javascript" src="js/script-recipe.js"></script> 
+
+  </body>
+
+</html>

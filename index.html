@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    <meta charset="utf-8">
+    <title>Local Market - Your Neighborhood Grocer</title>
+    <meta name="description" content="Get the latest news, checkout hand-picked recipes, and share with other locals.">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+    <link rel="shortcut icon" type="image/png" href="favicon.png?123" sizes="16x16 32x32 64x64">
+
+    <link rel="apple-touch-icon" sizes="120x120" href="apple-touch-icon-precomposed.png">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+
+  <body>
+
+    <div class="page home">
+
+      <!-- Inicia navbar -->
+      <nav class="black">
+        
+        <div class="nav-group">
+          
+          <a class="nav-item js-back" href="#">
+            <span class="icon-arrow-left-alt"></span>
+          </a>
+
+          <a class="nav-item js-menu" href="#"><span class="icon-menu"></span></a>
+          
+        </div>
+
+        <div class="title-page">
+          Market
+          <span class="subtext-page">Home</span>
+        </div>
+
+        <div class="nav-group right"></div>
+
+      </nav>
+      <!-- Termina navbar -->
+
+      <div class="content-scrollable">
+        <div class="bg-image home">
+          <h1 class="title-home">
+            <img src="img/app/logo-local.svg" alt="Local Market"/>
+          </h1>
+          <span class="hours"><span class="title-callout">Hours</span>
+            Mon–Fri 9-6pm, Sat 10-5pm</span>
+          <span class="arrow"></span>
+        </div>
+
+        <div class="callout-news">
+          <span class="title-callout">News</span>
+          <p></p>
+          <!-- AQUI VA LA LISTA DE NOTICIAS -->
+        </div>
+
+        <h2 class="list-title">What's Cooking</h2>
+        <div class="list-subtitle">See what the community is cooking</div>
+        <div class="list-activities">
+
+          <!-- AQUI VA LA LISTA DE ACTIVIDADES -->
+
+          <div class="wrapper-message">
+            <div class="title-message">No one is cooking yet!</div>
+            <div class="subtitle-message">Share that you made a recipe and it will show up here.</div>
+          </div>
+
+        </div>
+        <a href="#" class="btn-primary">See what's cooking</a>
+
+        <h2 class="list-title">Our Favorite Recipes</h2>
+        <div class="list-subtitle">Hand-picked by neighborhood chefs</div>
+        <div class="list-recipes">
+              
+          <!-- AQUI SE TIENE QUE VER LA LISTA DE RECETAS -->
+
+        </div>
+
+        <a href="#" class="btn-primary">Explore all our recipes</a>
+      </div>
+
+    </div>
+
+    <!--JS FILES-->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+    <script type="text/javascript" src="data/recipes.js"></script>
+    <script type="text/javascript" src="js/script-index.js"></script> 
+
+  </body>
+
+</html>
