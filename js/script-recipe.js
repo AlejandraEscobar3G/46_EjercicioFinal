@@ -11,4 +11,7 @@ $(document).ready(function(){
 		$('a.active').removeClass('active');
 		$(this).addClass('active');
 	});
+	$('.js-back').click(function(){
+		window.location = 'index.html';
+	});
 });
