@@ -1,5 +1,5 @@
-$(document).ready( function(){
-	$('.js-menu').hide();
+$(document).ready(function(){
+	$('.js-back').hide();
 	//La variable "recipesArray" esta declarada en el archivo "data/recipes.js"
 	renderHighlightedRecipes(recipesArray);
 	printNews();
@@ -28,6 +28,37 @@ function renderHighlightedRecipes(recipesArray) {
 */
 function renderRecipe(recipe) {
 	console.log('Voy a pintar la receta: ', recipe);
+	//span icon-bookmark
+	var spanIcon = $('<span class="icon-bookmark"></span>');
+	spanIcon.text(recipe.cookTime);
+	//span bookmarks-recipe
+	var spanBook = $('<span class="bookmarks-recipe"></span>');
+	//append spans
+	spanBook.append(spanIcon);
+	//span autor
+	var spanAuthor = $('<span class="author-recipe"></span>');
+	spanAuthor.text(recipe.source.name);
+	//span metadata
+	var spanMeta = $('<span class="metadata-recipe></span>');
+	spanMeta.append(spanAuthor);
+	spanMeta.append(spanBook);
+	//span title
+	var spanTitle = $('<span class="title-recipe"></span>')
+	spanTitle.text(recipe.title);
+	//span attribution
+	var spanAt = $('<span class="attribution"></span>');
+	spanAt.append(spanTitle);
+	spanAt.append(spanMeta);
+	//img
+	var img = $('<img/>');
+	img.attr('src', recipe.source.url);
+	//Haciendo 'a'
+	var a = $('<a class="item-recipe"></a>');
+	a.append(spanAt);
+	a.append(img);
+
+	//List-recipes
+	$('.list-recipes').append(a);
 }
 
 function printNews(){
