@@ -51,7 +51,7 @@ function renderRecipe(recipe) {
 	spanAt.append(spanMeta);
 	//img
 	var img = $('<img/>');
-	img.attr('src', recipe.source.url);
+	img.attr('src', 'img/recipes/320x350/'+recipe.name+'.jpg');
 	//Haciendo 'a'
 	var a = $('<a class="item-recipe"></a>');
 	a.append(spanAt);
